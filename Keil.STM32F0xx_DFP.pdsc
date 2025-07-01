@@ -13,11 +13,8 @@
   </licenseSets>
 
   <releases>
-    <release version="3.0.2-dev">
+    <release version="3.1.1-dev">
       Active development ...
-      Updateed Templates:
-      - Added DWARF-5 debug information
-      - Added generated output files
     </release>
     <release version="2.1.1" date="2022-02-01">
       Updated Pack to STM32Cube_FW_F0 Firmware Package version V1.11.3.
