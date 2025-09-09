@@ -15,6 +15,9 @@
   <releases>
     <release version="3.1.1-dev">
       Active development ...
+      Package Description (pdsc):
+      - Shortened device family description
+      - Added Ddsp processor attribute
     </release>
     <release version="2.1.1" date="2022-02-01">
       Updated Pack to STM32Cube_FW_F0 Firmware Package version V1.11.3.
@@ -154,16 +157,12 @@
 
   <devices>
     <family Dfamily="STM32F0 Series" Dvendor="STMicroelectronics:13">
-      <processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="0" Dmpu="0" Dendian="Little-endian"/>
+      <processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="0" Dmpu="0" Dendian="Little-endian" Ddsp="NO_DSP"/>
 
       <book name="https://developer.arm.com/documentation/dui0497/latest" title="Cortex-M0 Generic User Guide"/>
 
       <description>
-STMicroelectronics' STM32F0 series delivers 32-bit performance while providing the essentials of the STM32 family, particularly for cost-sensitive applications. STM32 F0 MCUs combine real-time performance, low-power operation, and the advanced architecture and peripherals associated with the STM32 platform available. This series of products is highly competitive in traditional 8-bit and 16-bit markets and eliminates the need to manage different architectures and the associated development overhead.
-Typical applications include application control and user interfaces, handheld equipment, A/V receivers and digital TV, PC peripherals, gaming and GPS platforms, industrial applications, PLCs, inverters, printers, scanners, alarm systems, video intercoms, and HVACs
-
-  - SRAM with HW parity checking
-  - Timer with deadtime generation and emergency stop
+High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
       </description>
 
       <sequences>
