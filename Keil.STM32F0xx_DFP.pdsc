@@ -15,6 +15,7 @@
   <releases>
     <release version="3.1.1-dev">
       Active development ...
+      Updated debug configuration files
       Package Description (pdsc):
       - Shortened device family description
       - Added Ddsp processor attribute
@@ -254,10 +255,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F030xx"/>
         <debug svd="CMSIS/SVD/STM32F0x0.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F030_070.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F030_070.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x00201932;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -403,10 +404,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F031x6"/>
         <debug svd="CMSIS/SVD/STM32F0x1.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -560,10 +561,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F038xx"/>
         <debug svd="CMSIS/SVD/STM32F0x8.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -658,10 +659,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F042x6"/>
         <debug svd="CMSIS/SVD/STM32F0x2.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -836,10 +837,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F048xx"/>
         <debug svd="CMSIS/SVD/STM32F0x8.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -912,10 +913,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F051x8"/>
         <debug svd="CMSIS/SVD/STM32F0x1.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -1130,10 +1131,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F058xx"/>
         <debug svd="CMSIS/SVD/STM32F0x8.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -1211,10 +1212,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F070xx"/>
         <debug svd="CMSIS/SVD/STM32F0x0.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F030_070.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F030_070.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x00201932;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -1298,10 +1299,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F071xB"/>
         <debug svd="CMSIS/SVD/STM32F0x1.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -1417,10 +1418,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F072xB"/>
         <debug svd="CMSIS/SVD/STM32F0x2.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -1554,10 +1555,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F078xx"/>
         <debug svd="CMSIS/SVD/STM32F0x8.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -1640,10 +1641,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F091xC"/>
         <debug svd="CMSIS/SVD/STM32F0x1.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
@@ -1769,10 +1770,10 @@ High-performance STM32F0 MCUs with Arm Cortex-M0 core, frequency up to 48 MHz.
         <compile define="STM32F098xx"/>
         <debug svd="CMSIS/SVD/STM32F0x8.svd"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf">
+        <debugvars configfile="CMSIS/Debug/STM32F0x1_0x2_0x8.dbgconf" version="1.0.1">
           __var DbgMCU_CR      = 0x00000006;   // DBGMCU_CR:  DBG_STOP, DBG_STANDBY
-          __var DbgMCU_APB1_Fz = 0x00000000;   // DGBMCU_APB1_FZ: All Peripherals Operate as in Normal Mode
-          __var DbgMCU_APB2_Fz = 0x00000000;   // DGBMCU_APB2_FZ: All Peripherals Operate as in Normal Mode
+          __var DbgMCU_APB1_Fz = 0x02201933;   // DGBMCU_APB1_FZ: Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2_Fz = 0x00070800;   // DGBMCU_APB2_FZ: Configure APB2 peripheral freeze behavior
           __var DoOptionByteLoading = 0;       // Disabled
         </debugvars>
 
